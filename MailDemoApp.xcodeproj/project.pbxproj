@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65B08FEF639734DF53A0A920 /* libPods-MailDemoApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC8AE0054ACCEA932F48312 /* libPods-MailDemoApp.a */; };
+		AA032F092222D6BD0053A438 /* Localizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA032F082222D6BD0053A438 /* Localizations.swift */; };
+		AA032F0C2222E0E30053A438 /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA032F0B2222E0E30053A438 /* KeyboardHelper.swift */; };
+		AA032F0E2222E3B50053A438 /* LoremIpsum in Resources */ = {isa = PBXBuildFile; fileRef = AA032F0D2222E3B50053A438 /* LoremIpsum */; };
+		AA032F102222E3DD0053A438 /* FirstNames in Resources */ = {isa = PBXBuildFile; fileRef = AA032F0F2222E3DD0053A438 /* FirstNames */; };
+		AA032F122222E4160053A438 /* LastNames in Resources */ = {isa = PBXBuildFile; fileRef = AA032F112222E4160053A438 /* LastNames */; };
+		AA032F142222E44A0053A438 /* MailSubjects in Resources */ = {isa = PBXBuildFile; fileRef = AA032F132222E44A0053A438 /* MailSubjects */; };
+		AA0385002208DD3100065EFB /* FoldersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0384FF2208DD3100065EFB /* FoldersListViewController.swift */; };
+		AA0385042208E37300065EFB /* MDFolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0385032208E37300065EFB /* MDFolder.swift */; };
+		AA0764AE2221831000F71305 /* MDMailBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764AD2221831000F71305 /* MDMailBody.swift */; };
+		AA0764B12221863A00F71305 /* MailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764B02221863A00F71305 /* MailConfigurator.swift */; };
+		AA0764B32221864900F71305 /* MailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764B22221864900F71305 /* MailViewInput.swift */; };
+		AA0764B52221865600F71305 /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764B42221865600F71305 /* MailViewController.swift */; };
+		AA0764B72221866100F71305 /* MailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764B62221866100F71305 /* MailViewOutput.swift */; };
+		AA0764B92221866D00F71305 /* MailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764B82221866D00F71305 /* MailPresenter.swift */; };
+		AA0764BD222186FC00F71305 /* MailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0764BC222186FC00F71305 /* MailViewController.xib */; };
+		AA0764BF2221B40F00F71305 /* FoldersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764BE2221B40F00F71305 /* FoldersService.swift */; };
+		AA0764C12221B94B00F71305 /* FolderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764C02221B94B00F71305 /* FolderListCell.swift */; };
+		AA0764C32221BC0800F71305 /* MailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764C22221BC0800F71305 /* MailsService.swift */; };
+		AA0764C62221BC5D00F71305 /* ReusableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764C52221BC5D00F71305 /* ReusableViews.swift */; };
+		AA0764C82221BD3B00F71305 /* MailListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0764C72221BD3B00F71305 /* MailListCell.swift */; };
+		AA0B3146220B9734000C4608 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0B3145220B9734000C4608 /* Services.swift */; };
+		AA137AF6221362C20042EA83 /* FoldersListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137AF5221362C20042EA83 /* FoldersListConfigurator.swift */; };
+		AA137AF8221362E50042EA83 /* FoldersListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137AF7221362E50042EA83 /* FoldersListViewInput.swift */; };
+		AA137AFA221362EF0042EA83 /* FoldersListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137AF9221362EF0042EA83 /* FoldersListViewOutput.swift */; };
+		AA137AFC221362F70042EA83 /* FoldersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA137AFB221362F70042EA83 /* FoldersListPresenter.swift */; };
+		AA14C8FD221FE8A30098D737 /* MDMail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14C8FC221FE8A30098D737 /* MDMail.swift */; };
+		AA14C8FF222049A20098D737 /* DataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA14C8FE222049A20098D737 /* DataGenerator.swift */; };
+		AA45F204221F2CC200685023 /* MailsListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F203221F2CC200685023 /* MailsListConfigurator.swift */; };
+		AA45F206221F2CD500685023 /* MailsListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F205221F2CD500685023 /* MailsListViewInput.swift */; };
+		AA45F208221F2CDE00685023 /* MailsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F207221F2CDE00685023 /* MailsListViewController.swift */; };
+		AA45F20A221F2CE800685023 /* MailsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F209221F2CE800685023 /* MailsListViewOutput.swift */; };
+		AA45F20C221F2CF000685023 /* MailsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F20B221F2CF000685023 /* MailsListPresenter.swift */; };
+		AA45F211221F54DF00685023 /* YapDbService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA45F210221F54DF00685023 /* YapDbService.swift */; };
+		AA7E574922073E7C005472BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7E574822073E7C005472BC /* AppDelegate.swift */; };
+		AA7E575022073E7D005472BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7E574F22073E7D005472BC /* Assets.xcassets */; };
+		AA7E575322073E7D005472BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7E575122073E7D005472BC /* LaunchScreen.storyboard */; };
+		AA7E577022077B14005472BC /* YapDatabase+Swift.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7E576F22077B14005472BC /* YapDatabase+Swift.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA7E576722074121005472BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7BC8AE0054ACCEA932F48312 /* libPods-MailDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MailDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA032F072222D0810053A438 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		AA032F082222D6BD0053A438 /* Localizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizations.swift; sourceTree = "<group>"; };
+		AA032F0B2222E0E30053A438 /* KeyboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		AA032F0D2222E3B50053A438 /* LoremIpsum */ = {isa = PBXFileReference; lastKnownFileType = text; path = LoremIpsum; sourceTree = "<group>"; };
+		AA032F0F2222E3DD0053A438 /* FirstNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = FirstNames; sourceTree = "<group>"; };
+		AA032F112222E4160053A438 /* LastNames */ = {isa = PBXFileReference; lastKnownFileType = text; path = LastNames; sourceTree = "<group>"; };
+		AA032F132222E44A0053A438 /* MailSubjects */ = {isa = PBXFileReference; lastKnownFileType = text; path = MailSubjects; sourceTree = "<group>"; };
+		AA0384FF2208DD3100065EFB /* FoldersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListViewController.swift; sourceTree = "<group>"; };
+		AA0385032208E37300065EFB /* MDFolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDFolder.swift; sourceTree = "<group>"; };
+		AA0764AD2221831000F71305 /* MDMailBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDMailBody.swift; sourceTree = "<group>"; };
+		AA0764B02221863A00F71305 /* MailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailConfigurator.swift; sourceTree = "<group>"; };
+		AA0764B22221864900F71305 /* MailViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewInput.swift; sourceTree = "<group>"; };
+		AA0764B42221865600F71305 /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
+		AA0764B62221866100F71305 /* MailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewOutput.swift; sourceTree = "<group>"; };
+		AA0764B82221866D00F71305 /* MailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailPresenter.swift; sourceTree = "<group>"; };
+		AA0764BC222186FC00F71305 /* MailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailViewController.xib; sourceTree = "<group>"; };
+		AA0764BE2221B40F00F71305 /* FoldersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersService.swift; sourceTree = "<group>"; };
+		AA0764C02221B94B00F71305 /* FolderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderListCell.swift; sourceTree = "<group>"; };
+		AA0764C22221BC0800F71305 /* MailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsService.swift; sourceTree = "<group>"; };
+		AA0764C52221BC5D00F71305 /* ReusableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViews.swift; sourceTree = "<group>"; };
+		AA0764C72221BD3B00F71305 /* MailListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailListCell.swift; sourceTree = "<group>"; };
+		AA0B3145220B9734000C4608 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		AA137AF5221362C20042EA83 /* FoldersListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListConfigurator.swift; sourceTree = "<group>"; };
+		AA137AF7221362E50042EA83 /* FoldersListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListViewInput.swift; sourceTree = "<group>"; };
+		AA137AF9221362EF0042EA83 /* FoldersListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListViewOutput.swift; sourceTree = "<group>"; };
+		AA137AFB221362F70042EA83 /* FoldersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersListPresenter.swift; sourceTree = "<group>"; };
+		AA14C8FC221FE8A30098D737 /* MDMail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDMail.swift; sourceTree = "<group>"; };
+		AA14C8FE222049A20098D737 /* DataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGenerator.swift; sourceTree = "<group>"; };
+		AA45F203221F2CC200685023 /* MailsListConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsListConfigurator.swift; sourceTree = "<group>"; };
+		AA45F205221F2CD500685023 /* MailsListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsListViewInput.swift; sourceTree = "<group>"; };
+		AA45F207221F2CDE00685023 /* MailsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsListViewController.swift; sourceTree = "<group>"; };
+		AA45F209221F2CE800685023 /* MailsListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsListViewOutput.swift; sourceTree = "<group>"; };
+		AA45F20B221F2CF000685023 /* MailsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsListPresenter.swift; sourceTree = "<group>"; };
+		AA45F210221F54DF00685023 /* YapDbService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YapDbService.swift; sourceTree = "<group>"; };
+		AA7E574522073E7C005472BC /* MailDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MailDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7E574822073E7C005472BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA7E574F22073E7D005472BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA7E575222073E7D005472BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA7E575422073E7D005472BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7E575B220740E7005472BC /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		AA7E575C220740E7005472BC /* YapDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YapDatabase.framework; path = Carthage/Build/iOS/YapDatabase.framework; sourceTree = "<group>"; };
+		AA7E575D220740E7005472BC /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		AA7E576E22077B14005472BC /* YapDatabase+Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YapDatabase+Swift.h"; sourceTree = "<group>"; };
+		AA7E576F22077B14005472BC /* YapDatabase+Swift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YapDatabase+Swift.m"; sourceTree = "<group>"; };
+		D204881CE6869ED58EF39D02 /* Pods-MailDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MailDemoApp/Pods-MailDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		F2F9D7C757C467A30E484635 /* Pods-MailDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MailDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MailDemoApp/Pods-MailDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA7E574222073E7C005472BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B08FEF639734DF53A0A920 /* libPods-MailDemoApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AA8D6B0733C5FA180015E38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2F9D7C757C467A30E484635 /* Pods-MailDemoApp.debug.xcconfig */,
+				D204881CE6869ED58EF39D02 /* Pods-MailDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA032F0A2222E0CD0053A438 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AA032F0B2222E0E30053A438 /* KeyboardHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AA0385052208E78400065EFB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA0385182208E9B800065EFB /* FoldersList */,
+				AA45F202221F2C8E00685023 /* MailsList */,
+				AA0764AF222185FD00F71305 /* Mail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		AA0385112208E8FA00065EFB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AA0B3145220B9734000C4608 /* Services.swift */,
+				AA45F210221F54DF00685023 /* YapDbService.swift */,
+				AA0764BE2221B40F00F71305 /* FoldersService.swift */,
+				AA0764C22221BC0800F71305 /* MailsService.swift */,
+				AA14C8FE222049A20098D737 /* DataGenerator.swift */,
+				AA0385172208E99A00065EFB /* Models */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AA0385172208E99A00065EFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0385032208E37300065EFB /* MDFolder.swift */,
+				AA14C8FC221FE8A30098D737 /* MDMail.swift */,
+				AA0764AD2221831000F71305 /* MDMailBody.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0385182208E9B800065EFB /* FoldersList */ = {
+			isa = PBXGroup;
+			children = (
+				AA137AF5221362C20042EA83 /* FoldersListConfigurator.swift */,
+				AA137AFD221363060042EA83 /* View */,
+				AA137AFE2213630D0042EA83 /* Presenter */,
+			);
+			path = FoldersList;
+			sourceTree = "<group>";
+		};
+		AA03851A2208E9E400065EFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E575422073E7D005472BC /* Info.plist */,
+				AA7E574822073E7C005472BC /* AppDelegate.swift */,
+				AA7E576E22077B14005472BC /* YapDatabase+Swift.h */,
+				AA7E576F22077B14005472BC /* YapDatabase+Swift.m */,
+				AA032F072222D0810053A438 /* BridgingHeader.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA03851B2208EA0200065EFB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E574F22073E7D005472BC /* Assets.xcassets */,
+				AA7E575122073E7D005472BC /* LaunchScreen.storyboard */,
+				AA032F082222D6BD0053A438 /* Localizations.swift */,
+				AA032F0D2222E3B50053A438 /* LoremIpsum */,
+				AA032F0F2222E3DD0053A438 /* FirstNames */,
+				AA032F112222E4160053A438 /* LastNames */,
+				AA032F132222E44A0053A438 /* MailSubjects */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AA0764AF222185FD00F71305 /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				AA0764B02221863A00F71305 /* MailConfigurator.swift */,
+				AA0764BB2221867800F71305 /* View */,
+				AA0764BA2221867100F71305 /* Presenter */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
+		AA0764BA2221867100F71305 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA0764B62221866100F71305 /* MailViewOutput.swift */,
+				AA0764B82221866D00F71305 /* MailPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		AA0764BB2221867800F71305 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA0764B22221864900F71305 /* MailViewInput.swift */,
+				AA0764B42221865600F71305 /* MailViewController.swift */,
+				AA0764BC222186FC00F71305 /* MailViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA0764C42221BC4400F71305 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AA0764C52221BC5D00F71305 /* ReusableViews.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		AA137AFD221363060042EA83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA137AF7221362E50042EA83 /* FoldersListViewInput.swift */,
+				AA0384FF2208DD3100065EFB /* FoldersListViewController.swift */,
+				AA0764C02221B94B00F71305 /* FolderListCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA137AFE2213630D0042EA83 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA137AF9221362EF0042EA83 /* FoldersListViewOutput.swift */,
+				AA137AFB221362F70042EA83 /* FoldersListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		AA45F202221F2C8E00685023 /* MailsList */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F203221F2CC200685023 /* MailsListConfigurator.swift */,
+				AA45F20E221F2D0600685023 /* View */,
+				AA45F20F221F2D1100685023 /* Presenter */,
+			);
+			path = MailsList;
+			sourceTree = "<group>";
+		};
+		AA45F20E221F2D0600685023 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F205221F2CD500685023 /* MailsListViewInput.swift */,
+				AA45F207221F2CDE00685023 /* MailsListViewController.swift */,
+				AA0764C72221BD3B00F71305 /* MailListCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AA45F20F221F2D1100685023 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AA45F209221F2CE800685023 /* MailsListViewOutput.swift */,
+				AA45F20B221F2CF000685023 /* MailsListPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		AA7E573C22073E7C005472BC = {
+			isa = PBXGroup;
+			children = (
+				AA7E574722073E7C005472BC /* MailDemoApp */,
+				AA7E574622073E7C005472BC /* Products */,
+				AA7E575A220740E7005472BC /* Frameworks */,
+				4AA8D6B0733C5FA180015E38 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7E574622073E7C005472BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E574522073E7C005472BC /* MailDemoApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7E574722073E7C005472BC /* MailDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA0385052208E78400065EFB /* Modules */,
+				AA0385112208E8FA00065EFB /* Services */,
+				AA0764C42221BC4400F71305 /* UIComponents */,
+				AA032F0A2222E0CD0053A438 /* Utils */,
+				AA03851B2208EA0200065EFB /* Resources */,
+				AA03851A2208E9E400065EFB /* Supporting Files */,
+			);
+			path = MailDemoApp;
+			sourceTree = "<group>";
+		};
+		AA7E575A220740E7005472BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA7E575D220740E7005472BC /* CocoaLumberjack.framework */,
+				AA7E575B220740E7005472BC /* CocoaLumberjackSwift.framework */,
+				AA7E575C220740E7005472BC /* YapDatabase.framework */,
+				7BC8AE0054ACCEA932F48312 /* libPods-MailDemoApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA7E574422073E7C005472BC /* MailDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7E575722073E7D005472BC /* Build configuration list for PBXNativeTarget "MailDemoApp" */;
+			buildPhases = (
+				FF77383C0ED6E489E5147D0B /* [CP] Check Pods Manifest.lock */,
+				AA7E574122073E7C005472BC /* Sources */,
+				AA7E574222073E7C005472BC /* Frameworks */,
+				AA7E574322073E7C005472BC /* Resources */,
+				AA7E576722074121005472BC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MailDemoApp;
+			productName = MailDemoApp;
+			productReference = AA7E574522073E7C005472BC /* MailDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7E573D22073E7C005472BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Azat Almeev";
+				TargetAttributes = {
+					AA7E574422073E7C005472BC = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = AA7E574022073E7C005472BC /* Build configuration list for PBXProject "MailDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA7E573C22073E7C005472BC;
+			productRefGroup = AA7E574622073E7C005472BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA7E574422073E7C005472BC /* MailDemoApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA7E574322073E7C005472BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA032F142222E44A0053A438 /* MailSubjects in Resources */,
+				AA032F102222E3DD0053A438 /* FirstNames in Resources */,
+				AA7E575322073E7D005472BC /* LaunchScreen.storyboard in Resources */,
+				AA0764BD222186FC00F71305 /* MailViewController.xib in Resources */,
+				AA032F122222E4160053A438 /* LastNames in Resources */,
+				AA7E575022073E7D005472BC /* Assets.xcassets in Resources */,
+				AA032F0E2222E3B50053A438 /* LoremIpsum in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF77383C0ED6E489E5147D0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MailDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7E574122073E7C005472BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0764C82221BD3B00F71305 /* MailListCell.swift in Sources */,
+				AA0764C62221BC5D00F71305 /* ReusableViews.swift in Sources */,
+				AA0764AE2221831000F71305 /* MDMailBody.swift in Sources */,
+				AA0385002208DD3100065EFB /* FoldersListViewController.swift in Sources */,
+				AA45F20C221F2CF000685023 /* MailsListPresenter.swift in Sources */,
+				AA137AF8221362E50042EA83 /* FoldersListViewInput.swift in Sources */,
+				AA137AF6221362C20042EA83 /* FoldersListConfigurator.swift in Sources */,
+				AA0764B72221866100F71305 /* MailViewOutput.swift in Sources */,
+				AA45F20A221F2CE800685023 /* MailsListViewOutput.swift in Sources */,
+				AA0764C32221BC0800F71305 /* MailsService.swift in Sources */,
+				AA0B3146220B9734000C4608 /* Services.swift in Sources */,
+				AA0764B32221864900F71305 /* MailViewInput.swift in Sources */,
+				AA137AFA221362EF0042EA83 /* FoldersListViewOutput.swift in Sources */,
+				AA7E577022077B14005472BC /* YapDatabase+Swift.m in Sources */,
+				AA0385042208E37300065EFB /* MDFolder.swift in Sources */,
+				AA14C8FD221FE8A30098D737 /* MDMail.swift in Sources */,
+				AA14C8FF222049A20098D737 /* DataGenerator.swift in Sources */,
+				AA0764C12221B94B00F71305 /* FolderListCell.swift in Sources */,
+				AA032F092222D6BD0053A438 /* Localizations.swift in Sources */,
+				AA0764B12221863A00F71305 /* MailConfigurator.swift in Sources */,
+				AA0764BF2221B40F00F71305 /* FoldersService.swift in Sources */,
+				AA45F208221F2CDE00685023 /* MailsListViewController.swift in Sources */,
+				AA0764B52221865600F71305 /* MailViewController.swift in Sources */,
+				AA45F206221F2CD500685023 /* MailsListViewInput.swift in Sources */,
+				AA032F0C2222E0E30053A438 /* KeyboardHelper.swift in Sources */,
+				AA45F211221F54DF00685023 /* YapDbService.swift in Sources */,
+				AA45F204221F2CC200685023 /* MailsListConfigurator.swift in Sources */,
+				AA7E574922073E7C005472BC /* AppDelegate.swift in Sources */,
+				AA0764B92221866D00F71305 /* MailPresenter.swift in Sources */,
+				AA137AFC221362F70042EA83 /* FoldersListPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA7E575122073E7D005472BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7E575222073E7D005472BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA7E575522073E7D005472BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA7E575622073E7D005472BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA7E575822073E7D005472BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F9D7C757C467A30E484635 /* Pods-MailDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DQMCNC2P;
+				INFOPLIST_FILE = MailDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.MailDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MailDemoApp/BridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA7E575922073E7D005472BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D204881CE6869ED58EF39D02 /* Pods-MailDemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56DQMCNC2P;
+				INFOPLIST_FILE = MailDemoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.azatalmeev.MailDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MailDemoApp/BridgingHeader.h;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7E574022073E7C005472BC /* Build configuration list for PBXProject "MailDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7E575522073E7D005472BC /* Debug */,
+				AA7E575622073E7D005472BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA7E575722073E7D005472BC /* Build configuration list for PBXNativeTarget "MailDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7E575822073E7D005472BC /* Debug */,
+				AA7E575922073E7D005472BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7E573D22073E7C005472BC /* Project object */;
+}
